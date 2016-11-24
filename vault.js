@@ -12,7 +12,7 @@ module.exports = function(){
   }
 
   function getValue(key){
-    if(security[key]){
+    if(security.hasOwnProperty(key)){
 
 
     return security[key];
@@ -20,7 +20,7 @@ module.exports = function(){
     }else{
 
     return null;
-    
+
     }
 
   }
